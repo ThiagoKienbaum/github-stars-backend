@@ -3,9 +3,9 @@ import User from '../models/User';
 
 class UserController {
   async store(req, res) {
-    const schema = Yup.object.shape({
+    const schema = Yup.object().shape({
       name: Yup.string().required(),
-      github_id: Yup.number().required(),
+      github_id: Yup.string().required(),
       email: Yup.string()
         .email()
         .required(),
@@ -39,9 +39,9 @@ class UserController {
   }
 
   async update(req, res) {
-    const schema = Yup.object.shape({
+    const schema = Yup.object().shape({
       name: Yup.string(),
-      github_id: Yup.number(),
+      github_id: Yup.string(),
       email: Yup.string().email(),
       oldPassword: Yup.string().min(6),
       password: Yup.string()
