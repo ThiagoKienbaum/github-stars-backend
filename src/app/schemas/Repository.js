@@ -22,6 +22,10 @@ const RepositorySchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    owner_avatar: {
+      type: String,
+      required: true,
+    },
     tags: {
       type: [String],
     },

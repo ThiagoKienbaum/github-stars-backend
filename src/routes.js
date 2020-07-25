@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
-import StarredRepositoryController from './app/controllers/StarredRepositoryController';
+import RepositoryController from './app/controllers/RepositoryController';
 import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
@@ -11,7 +11,8 @@ routes.post('/sessions', SessionController.store);
 
 routes.use(authMiddleware);
 
-routes.get('/starredrepositories', StarredRepositoryController.index);
 routes.put('/users', UserController.update);
+
+routes.get('/repositories', RepositoryController.index);
 
 export default routes;
