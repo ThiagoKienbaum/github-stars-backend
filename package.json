@@ -7,6 +7,7 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "@sentry/node": "5.20.0",
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
