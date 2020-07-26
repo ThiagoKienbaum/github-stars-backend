@@ -17,6 +17,7 @@ routes.put('/users', UserController.update);
 routes.get('/repositories', RepositoryController.index);
 
 routes.post('/tags/:id', TagController.store);
+routes.get('/tags', TagController.show);
 routes.put('/tags/:id/:tag', TagController.update);
 routes.delete('/tags/:id/:tag', TagController.delete);
 
