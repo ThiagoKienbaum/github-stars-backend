@@ -17,10 +17,10 @@ class TagController {
   }
 
   async show(req, res) {
-    const { tagToSearch } = req.body;
+    const { tag } = req.params;
     const starredRepository = await Repository.find({
       user_id: req.userId,
-      tags: new RegExp(tagToSearch, 'i'),
+      tags: new RegExp(tag, 'i'),
     });
 
     if (starredRepository.length === 0) {
