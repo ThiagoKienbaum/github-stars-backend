@@ -1,6 +1,9 @@
 {
   "name": "github-stars",
   "version": "1.0.0",
+  "engines": {
+    "node": "13.12.0"
+  },
   "main": "index.js",
   "license": "MIT",
   "scripts": {
