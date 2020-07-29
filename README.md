@@ -99,7 +99,7 @@ Now you can access the API on your localhost:3333
   }
   ```
   
-### Before this point, you need to send a valid Bearer Token on Authoziration.
+### After this point, you need to send a valid Bearer Token on Authoziration.
 * Update a user 
   - Post/users
   - Body (send information you want to update)
